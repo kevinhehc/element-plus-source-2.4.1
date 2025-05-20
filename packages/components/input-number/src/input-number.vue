@@ -205,7 +205,7 @@ const verifyValue = (
   if (max < min) {
     throwError('InputNumber', 'min should not be greater than max.')
   }
-  let newVal = Number(value)
+  let newVal: any = Number(value)
   if (isNil(value) || Number.isNaN(newVal)) {
     return null
   }
